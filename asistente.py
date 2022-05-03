@@ -129,11 +129,11 @@ def Take_query():
             webbrowser.open("www.google.com") 
             continue
               
-        elif "que dia es hoy" in query: 
+        elif "qué día es hoy" in query: 
             tellDay() 
             continue
           
-        elif "que tiempor hace" in query: 
+        elif "qué hora es" in query: 
             tellTime() 
             continue
           
@@ -157,7 +157,7 @@ def Take_query():
             speak(result) 
           
         elif "cómo te llamas" in query: 
-            speak("Soy manolo, tu asistente virt") 
+            speak("Soy manolo, tu asistente virtual") 
   
 if __name__ == '__main__': 
       
