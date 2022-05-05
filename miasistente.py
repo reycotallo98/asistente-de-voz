@@ -7,6 +7,7 @@ import yfinance as yf
 import pyjokes
 import datetime
 import wikipedia
+import keyboard
 
 
 # escuchar microfono y devolver audio como texto
@@ -167,6 +168,17 @@ def pedir_cosas():
                 elif 'callate' in pedido:
                     hablar('XAO')
                     comenzar = False
+                elif 'escribe' in pedido:
+                    hola = True
+                    while hola:
+                        texto = transfAudio()
+                        if texto == 'para':
+                            hola = False
+                            hablar('de acuerdo') 
+                        keyboard.write(texto+'\n')
+                        
+
+                        
 
 
 if __name__ == '__main__':
